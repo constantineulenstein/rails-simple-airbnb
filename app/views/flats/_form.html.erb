@@ -1,0 +1,16 @@
+<div class="container w-50 mt-5" style="background-color: #F8F9FA">
+
+  <h1 class="pt-3">New Flat</h1>
+
+  <%= simple_form_for flat do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :img_url, label: "Image Path" %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.submit "Create Flat", class: "btn btn-primary" %>
+    <br>
+    <%= link_to "Cancel", flats_path, class: "btn btn-outline-primary py-0 mt-2" %>
+  <% end %>
+</div>

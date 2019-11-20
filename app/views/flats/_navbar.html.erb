@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light d-flex justify-content-between">
+  <div>
+     <%= link_to "Available Flats", flats_path, class: 'navbar-brand' %>
+  </div>
+  <div class="flex">
+    <form class="form-inline">
+      <input type="search" name="query" class="form-control" placeholder="Search">
+      <button class="btn btn-outline-info ml-2" type="submit">Search</button>
+       <%= link_to "Add Flat", new_flat_path, class: 'navbar-brand btn btn-outline-secondary ml-2'  %>
+    </form>
+
+  </div>
+</nav>
+
